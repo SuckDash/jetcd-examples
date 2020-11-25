@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <groupId>io.etcd</groupId>
+        <artifactId>jetcd-parent</artifactId>
+        <version>0.5.4</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>io.etcd.examples</groupId>
+    <artifactId>jetcd-examples</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+<!--        <module>jetcd-watch</module>-->
+        <module>jetcd-ctl</module>
+    </modules>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-deploy-plugin</artifactId>
+                    <configuration>
+                        <skip>true</skip>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+</project>
